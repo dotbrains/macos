@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo -e "###############################################################################
+# General UI/UX                                                               #
+###############################################################################"
+
+# Disable the sound effects on boot
+#echo "[-] Disable the sound effects on boot."
+#sudo nvram SystemAudioVolume=" "
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+echo "[-] Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)."
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Disable the 'Are you sure you want to open this application?' dialog
+echo -e "[-] Disable the \"Are you sure you want to open this application?\" dialog."
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Automatically quit printer app once the print jobs complete
+echo "[-] Automatically quit printer app once the print jobs complete."
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Disable automatic termination of inactive apps
+echo "[-] Disable automatic termination of inactive apps."
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
+# Restart automatically if the computer freezes
+#echo "[-] Restart automatically if the computer freezes."
+#sudo systemsetup -setrestartfreeze on
+
+# Save to disk (not to iCloud) by default
+#echo "[-] Save to disk (not to iCloud) by default."
+#defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
+#echo -e "[-] Remove duplicates in the \"Open With\" menu."
+#/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
+
+# Disable smart quotes as they’re annoying when typing code
+echo "[-] Disable smart quotes as they’re annoying when typing code."
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable smart dashes as they’re annoying when typing code
+echo "[-] General: Disable smart dashes as they’re annoying when typing code."
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false

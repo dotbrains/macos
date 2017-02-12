@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo -e "###############################################################################
+# Screen                                                                      #
+###############################################################################"
+
+# Require password immediately after sleep or screen saver begins
+echo "[-] Require password immediately after sleep or screen saver begins."
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Change screenshot location
+# http://osxdaily.com/2011/01/26/change-the-screenshot-save-file-location-in-mac-os-x/
+echo "[-] Change screenshot location to $HOME/Documents/Screenshots."
+if [ ! -d "${HOME}/Documents/Screenshots" ]; then
+	mkdir -p ${HOME}/Documents/Screenshots
+fi
+defaults write com.apple.screencapture location ${HOME}/Documents/Screenshots/
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+echo "[-] Save screenshots in PNG format."
+defaults write com.apple.screencapture type -string "png"
+
+# Disable shadow in screenshots
+echo "[-] Disable shadow in screenshots."
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# Enable HiDPI display modes (requires restart)
+echo "[-] Enable HiDPI display modes (requires restart)."
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true

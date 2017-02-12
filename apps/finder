@@ -1,0 +1,94 @@
+#!/bin/bash
+
+echo -e "###############################################################################
+# Finder                                                                      #
+###############################################################################"
+
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+echo "[-] Allow quitting via ⌘ + Q."
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Disable the warning before emptying the Trash
+echo "[-] Disable the warning before emptying the Trash."
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Use list view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+echo "[-] Use list view in all Finder windows by default."
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Finder: show status bar
+echo "[-] Show status bar."
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+echo "[-] Show path bar."
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Display full POSIX path as Finder window title
+echo "[-] Display full POSIX path as Finder window title."
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Show the /Volumes folder
+echo "[-] Show the /Volumes folder."
+sudo chflags nohidden /Volumes
+
+# Finder: show hidden files by default
+#echo "[-] Show hidden files by default."
+#defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: disable window animations and Get Info animations
+echo "[-] Disable window animations and Get Info animations."
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Set Desktop as the default location for new Finder windows
+# For other paths, use `PfLo` and `file:///full/path/here/`
+echo "[-] Set Desktop as the default location for new Finder windows."
+defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+
+# Automatically open a new Finder window when a volume is mounted
+echo "[-] Automatically open a new Finder window when a volume is mounted."
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+
+# Finder: show all filename extensions
+echo "[-] Show all filename extensions."
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable the warning when changing a file extension
+echo "[-] Disable the warning when changing a file extension."
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+echo "[-] Avoid creating .DS_Store files on network or USB volumes."
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Disable disk image verification
+echo "[-] Disable disk image verification."
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+
+# Enable snap-to-grid for icons on the desktop and in other icon views
+echo "[-] Enable snap-to-grid for icons on the desktop and in other icon views."
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# Show item info below desktop icons
+echo "[-] Show item info below desktop icons."
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+
+# Enable AirDrop over Ethernet and on unsupported Macs running Lion
+echo "[-] Enable AirDrop over Ethernet and on unsupported Macs running Lion."
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+
+# Expand the following File Info panes:
+# “General”, “Open with”, and “Sharing & Permissions”
+echo "[-] Expand the following File Info panes: (General, Open With, Sharing & Permissions)."
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true

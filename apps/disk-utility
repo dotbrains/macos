@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -e "###############################################################################
+# Disk Utility                                                                #
+###############################################################################"
+
+# Enable the debug menu in Disk Utility
+echo "[-] Enable the debug menu in Disk Utility."
+defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+defaults write com.apple.DiskUtility advanced-image-options -bool true
