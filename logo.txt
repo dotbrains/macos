@@ -6,5 +6,5 @@
   ▀     █
        ▀ v 0.1a
 Made w/ <3 by Nicholas Adamou
-~/.macos — https://nicholasadamou.github.io/
+~/.macos — https://github.com/NicholasAdamou/macos
 Based on https://github.com/mathiasbynens/dotfiles/blob/master/.macos.
