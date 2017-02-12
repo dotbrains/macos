@@ -23,7 +23,8 @@ Install
 
 Download, review, then execute the script:
 
-```git clone git://github.com/NicholasAdamou/macos.git && cd macos && ./macos
+```
+git clone git://github.com/NicholasAdamou/macos.git && cd macos && ./macos
 ```
 
 It should take less than a minute to install.
