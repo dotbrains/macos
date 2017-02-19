@@ -4,7 +4,7 @@ macOS
 [![asciicast](https://asciinema.org/a/102862.png)](https://asciinema.org/a/102862)
 ![license](https://img.shields.io/apm/l/vim-mode.svg)
 
-macOS is a script - written in pure bash - to set up an macOS laptop with my opinionated configurations.
+macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
 
 It can run multiple times on the same machine safely.
 
