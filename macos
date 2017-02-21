@@ -44,7 +44,8 @@ function begin() {
 	preCheck
 
 	echo ""
-	cat logo.txt
+	sh logo.sh
+	echo ""
 
 	#System Configuration(s)
 	bash system/general

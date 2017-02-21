@@ -1,7 +1,7 @@
 macOS
 ======
 
-[![asciicast](https://asciinema.org/a/102862.png)](https://asciinema.org/a/102862)
+[![asciicast](https://asciinema.org/a/cyba73b9ixtyhr19ou7mdfzis.png)](https://asciinema.org/a/cyba73b9ixtyhr19ou7mdfzis)
 ![license](https://img.shields.io/apm/l/vim-mode.svg)
 
 macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
