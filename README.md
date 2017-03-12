@@ -3,6 +3,7 @@ macOS
 
 [![asciicast](https://asciinema.org/a/cyba73b9ixtyhr19ou7mdfzis.png)](https://asciinema.org/a/cyba73b9ixtyhr19ou7mdfzis)
 ![license](https://img.shields.io/apm/l/vim-mode.svg)
+[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/NicholasAdamou)
 
 macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
 
