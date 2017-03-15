@@ -25,7 +25,9 @@ Install
 Download, review, then execute the script:
 
 ```
-git clone git://github.com/NicholasAdamou/macos.git && cd macos && ./macos
+sh
+curl --remote-name https://raw.githubusercontent.com/nicholasadamou/macos/master/macos
+bash macos
 ```
 
 It should take less than a minute to install.
