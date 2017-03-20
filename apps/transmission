@@ -5,12 +5,12 @@ echo -e "#######################################################################
 ###############################################################################"
 
 # Use `${HOME}/Documents/Torrents` to store incomplete downloads
-echo -e "[-] Use \"${HOME}/Documents/Torrents\" to store incomplete downloads."
-if [ ! -d "${HOME}/Documents/Torrents" ]; then
- mkdir -p ${HOME}/Documents/Torrents &> /dev/null
+echo -e "[-] Use \"${HOME}/Documents/@Torrents/@Incomplete\" to store incomplete downloads."
+if [ ! -d "${HOME}/Documents/@Torrents/@Incomplete" ]; then
+ mkdir -p ${HOME}/Documents/@Torrents/@Incomplete &> /dev/null
 fi
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
+defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/@Torrents/@Incomplete"
 
 # Don’t prompt for confirmation before downloading
 echo "[-] Don’t prompt for confirmation before downloading."

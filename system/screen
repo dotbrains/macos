@@ -11,11 +11,11 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Change screenshot location
 # http://osxdaily.com/2011/01/26/change-the-screenshot-save-file-location-in-mac-os-x/
-echo "[-] Change screenshot location to $HOME/Documents/Screenshots."
-if [ ! -d "${HOME}/Documents/Screenshots" ]; then
-	mkdir -p ${HOME}/Documents/Screenshots
+echo "[-] Change screenshot location to $HOME/Documents/@Images/@Screenshots."
+if [ ! -d "${HOME}/Documents/@Images/@Screenshots" ]; then
+	mkdir -p ${HOME}/Documents/@Images/@Screenshots
 fi
-defaults write com.apple.screencapture location ${HOME}/Documents/Screenshots/
+defaults write com.apple.screencapture location ${HOME}/Documents/@Images/@Screenshots/
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 echo "[-] Save screenshots in PNG format."
