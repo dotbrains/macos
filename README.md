@@ -25,7 +25,7 @@ Install
 Download, review, then execute the script:
 
 ```
-sh
+bash
 curl --remote-name https://raw.githubusercontent.com/nicholasadamou/macos/master/macos
 bash macos
 ```
