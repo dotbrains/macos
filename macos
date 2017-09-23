@@ -55,6 +55,7 @@ function begin() {
 	sleep 0.1
 	echo "Made with <3 by: Nicholas Adamou (4d4m0u)"
 	sleep 0.1
+	# shellcheck disable=SC2088
 	echo "~/.macos — https://github.com/NicholasAdamou/macos"
 	sleep 0.1
 	echo "Based on https://github.com/mathiasbynens/dotfiles/blob/master/.macos."
