@@ -1,8 +1,9 @@
 macOS
 ======
 
+![Build Status](https://travis-ci.org/nicholasadamou/macos.svg?branch=master)
 ![license](https://img.shields.io/apm/l/vim-mode.svg)
-[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/NicholasAdamou)
+[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/nicholasadamou)
 
 macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
 
