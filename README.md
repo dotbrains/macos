@@ -1,9 +1,5 @@
-macOS
+macOS ![Build Status](https://travis-ci.org/nicholasadamou/macos.svg?branch=master)
 ======
-
-![Build Status](https://travis-ci.org/nicholasadamou/macos.svg?branch=master)
-![license](https://img.shields.io/apm/l/vim-mode.svg)
-[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/nicholasadamou)
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/9xfHBCXLLneQfkK8qiHeHcLd/nicholasadamou/macos'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/9xfHBCXLLneQfkK8qiHeHcLd/nicholasadamou/macos.svg' />
