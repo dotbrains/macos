@@ -1,10 +1,6 @@
 macOS ![Build Status](https://travis-ci.org/nicholasadamou/macos.svg?branch=master)
 ======
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/9xfHBCXLLneQfkK8qiHeHcLd/nicholasadamou/macos'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/9xfHBCXLLneQfkK8qiHeHcLd/nicholasadamou/macos.svg' />
-</a>
-
 macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
 
 It can run multiple times on the same machine safely.
