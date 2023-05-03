@@ -1,4 +1,4 @@
-macOS ![Build Status](https://travis-ci.org/nicholasadamou/macos.svg?branch=master)
+macOS
 ======
 
 macOS is a script - written in pure bash - to set up a macOS laptop with my opinionated configurations.
