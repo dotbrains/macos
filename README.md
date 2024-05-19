@@ -5,7 +5,7 @@ macOS is a script - written in pure bash - to set up a macOS laptop with my opin
 
 It can run multiple times on the same machine safely.
 
-[Requirements](https://github.com/nicholasadamou/macos#requirements) / [Install](https://github.com/nicholasadamou/macos#install) / [License](https://github.com/nicholasadamou/macos#license)
+[Requirements](https://github.com/dotbrains/macos#requirements) / [Install](https://github.com/dotbrains/macos#install) / [License](https://github.com/dotbrains/macos#license)
 
 Requirements
 ------------
@@ -24,7 +24,7 @@ Download, review, then execute the script:
 
 ```
 bash
-curl --remote-name https://raw.githubusercontent.com/nicholasadamou/macos/master/macos
+curl --remote-name https://raw.githubusercontent.com/dotbrains/macos/master/macos
 bash macos
 ```
 

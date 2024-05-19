@@ -9,7 +9,7 @@
 #   ▀     █
 #        ▀ v 0.1a
 # Made w/ <3 by Nicholas Adamou
-# ~/.macos — https://github.com/NicholasAdamou/macos
+# ~/.macos — https://github.com/dotbrains/macos
 # Based on https://github.com/mathiasbynens/dotfiles/blob/master/.macos.
 
 function preCheck() {
@@ -56,7 +56,7 @@ function begin() {
 	echo "Made with <3 by: Nicholas Adamou (4d4m0u)"
 	sleep 0.1
 	# shellcheck disable=SC2088
-	echo "~/.macos — https://github.com/NicholasAdamou/macos"
+	echo "~/.macos — https://github.com/dotbrains/macos"
 	sleep 0.1
 	echo "Based on https://github.com/mathiasbynens/dotfiles/blob/master/.macos."
 	sleep 0.1
